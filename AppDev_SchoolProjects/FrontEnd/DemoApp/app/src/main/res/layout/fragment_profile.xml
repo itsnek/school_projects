@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.main.profile.ProfileFragment">
+
+    <TextView
+        android:id="@+id/follows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Follows"
+        android:lines="2"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/Register_ProfileImageContainer"
+        app:layout_constraintTop_toTopOf="@id/Register_ProfileImageContainer"
+        app:layout_constraintBottom_toBottomOf="@id/Register_ProfileImageContainer"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Register_ProfileImageContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="1000dp"
+        app:cardPreventCornerOverlap="false"
+        app:layout_constraintWidth_percent="0.25"
+        app:layout_constraintDimensionRatio="H,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/Register_ProfileImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:background="@drawable/ic_launcher_background"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:cardCornerRadius="16dp"
+        app:cardPreventCornerOverlap="false"
+        app:layout_constraintWidth_percent="0.25"
+        app:layout_constraintDimensionRatio="H,1:1"
+        app:layout_constraintBottom_toBottomOf="@id/Register_ProfileImageContainer"
+        app:layout_constraintEnd_toEndOf="@id/Register_ProfileImageContainer"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/followers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Followers"
+        android:lines="2"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toEndOf="@id/Register_ProfileImageContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/Register_ProfileImageContainer"
+        app:layout_constraintBottom_toBottomOf="@id/Register_ProfileImageContainer"/>
+
+    <android.widget.Button
+        android:id="@+id/Create_Plan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Register_ProfileImageContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+
+        android:background="@drawable/round_bg"
+        android:text="Create memory"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Trip_List"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/Create_Plan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:scrollbars="vertical"
+        android:fadingEdgeLength="16dp"
+        android:requiresFadingEdge="vertical" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

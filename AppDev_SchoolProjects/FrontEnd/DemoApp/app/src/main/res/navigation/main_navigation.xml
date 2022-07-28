@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_map"
+        android:name="com.example.demoapp.ui.main.map.MapFragment"
+        android:label="Map"
+        tools:layout="@layout/fragment_map"/>
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.demoapp.ui.main.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.demoapp.ui.main.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.demoapp.ui.main.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/navigation_trip"
+        android:name="com.example.demoapp.ui.main.trip.TripFragment"
+        android:label="Trip"
+        tools:layout="@layout/fragment_trip" />
+
+    <fragment
+        android:id="@+id/navigation_CreatePlan"
+        android:name="com.example.demoapp.ui.main.plan.CreatePlanFragment"
+        android:label="CreatePlan"
+        tools:layout="@layout/fragment_create_plan" />
+
+    <fragment
+        android:id="@+id/navigation_ViewPlan"
+        android:name="com.example.demoapp.ui.main.plan.view.ViewPlanFragment"
+        android:label="ViewPlan"
+        tools:layout="@layout/fragment_view_plan" />
+
+    <fragment
+        android:id="@+id/navigation_AddMoment"
+        android:name="com.example.demoapp.ui.main.plan.moment.AddMomentFragment"
+        android:label="AddMoment"
+        tools:layout="@layout/fragment_add_moment" />
+
+    <fragment
+        android:id="@+id/navigation_followee"
+        android:name="com.example.demoapp.ui.main.followee.FolloweeFragment"
+        android:label="Followee"
+        tools:layout="@layout/fragment_follow" />
+
+    <fragment
+        android:id="@+id/navigation_follower"
+        android:name="com.example.demoapp.ui.main.follower.FollowerFragment"
+        android:label="Follower"
+        tools:layout="@layout/fragment_follow" />
+
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.example.demoapp.ui.main.account.AccountFragment"
+        android:label="Account"
+        tools:layout="@layout/fragment_account" />
+
+<!--    <fragment-->
+<!--        android:id="@+id/navigation_location"-->
+<!--        android:name="com.example.demoapp.ui.main.map.LocationFragment"-->
+<!--        android:label="Location"-->
+<!--        tools:layout="@layout/fragment_location" />-->
+
+</navigation>

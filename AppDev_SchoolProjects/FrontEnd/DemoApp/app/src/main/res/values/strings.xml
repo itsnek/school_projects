@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">DemoApp</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_email">Not a valid email address</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="password_not_match">Passwords do not match</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="email">Email</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="cancel">Cancel</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="save_profile">Save profile</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="description">Description</string>
+    <string name="birthday">Birthday</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="travel_thumbnail">Travel thumbnail</string>
+    <string name="no_results_found">No results found</string>
+    <string name="city">City</string>
+    <string name="country">Country</string>
+    <string name="add_moment">Add moment</string>
+    <string name="name_error">Name cannot be empty</string>
+    <string name="surname_error">Surname cannot be empty</string>
+    <string name="country_error">Please select a country</string>
+    <string name="notifications">Notifications</string>
+    <string name="title_activity_location">LocationActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+</resources>
