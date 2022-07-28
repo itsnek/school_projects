@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <meta charset="UTF-8">
+        <meta name= "author" content="Nikos Siachamis">
+        <link rel="stylesheet" href="./styles.css"/>
+        <link rel="shortcut icon" href="./Images/Untitled.png" type="image/x-icon" />
+
+        <title> 
+            CS_Newspaper - DevOps Article 
+        </title>
+
+    </head>
+    
+    <body>
+
+        <img src="./Images/Untitled.png" width="35" height="35" alt="CS_Newspaper_icon">
+        <h2 class="Webpage-title"><a href="./index.html">CS_Newspaper</a></h2>
+
+        <div class="sub-nav" >
+
+            <img class="dropbtn" src="./Images/nav_icon.png" alt="Menu" width="32" height="25">
+            <div class="dropdownMenu">
+                <a class="links" href="./benefits.html"> Benefits </a>
+                <a class="links" href="./practices.html"> Practices </a>
+            </div>
+
+        </div>
+
+        <div class="grid-container">
+
+            <div class="item1">
+                DevOps Practices
+            </div>
+            <div class="item-2 item-2-s">
+
+                <h4 class="title"> Menu </h4>
+
+                <nav class="sub-nav" data-content-field="navigation">
+
+                    <ul class="subnavigationlist">
+
+                        <li class="sublist-item">
+                            <a href="#Integration">
+                                Integration
+                            </a>   
+                        </li>
+                        <li class="sublist-item">
+                            <a href="#Delivery">
+                                Continuous Delivery
+                            </a> 
+                        </li>
+                        <li class="sublist-item">
+                            <a href="#Microservices">
+                                Microservices
+                            </a> 
+                        </li>
+                        <li class="sublist-item">
+                            <a href="#Infrastructure">
+                                Infrastructure as Code
+                            </a>   
+                        </li>
+                        <li class="sublist-item">
+                            <a href="#Monitoring">
+                                Monitoring & Logging
+                            </a> 
+                        </li>
+                        <li class="sublist-item">
+                            <a href="#Communication">
+                                Improved Communication & Collaboration
+                            </a> 
+                        </li>
+
+                        <li class="sublist-item">
+                            <a href="#Tools">
+                                Tools
+                            </a> 
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+            </div>
+
+            <div class="item-n items-n-s">
+
+                <div class="item-3 item-3-s">
+
+                    <article class="imgs">
+                        <p>
+                            The following are DevOps <strong> best practices: </strong>  
+                        </p>
+
+                        <ul class="practice_list">
+                            <li id="Integration">
+                                <strong>Integration:</strong> a software development practice where developers regularly merge their code changes into a central repository, 
+                                after which automated builds and tests are run. By doing this developers can find and address bugs quicker, improve software quality, and reduce the time it takes to validate and release new software updates.<br><br>
+                            </li>
+
+                            <img class="img_content" src="./Images/DevOps/cisq-standards-in-devops.png" width="500" height="310" alt="image"/> 
+                            <p class="caption"> The analysis of some practices used in DevOps. </p><br>
+
+                            <li id="Delivery">
+                                <strong> Continuous Delivery: </strong> a software development practice where code changes are automatically built, tested, and prepared for a release to production. 
+                                When continuous delivery is implemented properly, developers will always have a deployment-ready build artifact.<br><br>
+                            </li>
+
+                            <img id="microservices" class="img_content" src="./Images/DevOps/DevOps-What-is_microservices.3a506e14bb8fb85a350346bdc76ddd33a7e73586.png" alt="image"/> 
+
+                            <li id="Microservices">
+                                <strong> Microservices: </strong> a design approach to build a single application as a set of small services. Each service runs in its own process and 
+                                communicates with other services through a well-defined interface, typically an HTTP-based application programming interface (API).<br><br>
+                            </li>
+
+                            <li id="Infrastructure">
+                                <strong> Infrastructure as Code: </strong> a practice in which infrastructure is provisioned and managed using code and software development techniques, such as version control and continuous integration.
+                            </li>
+                        </ul>
+
+                    </article>
+
+                </div>  
+
+                <div class="item-4 item-4-s">
+
+                    <article class="imgs">
+
+                        <ul class="practice_list">
+                            <li id="Monitoring">
+                                <strong> Monitoring and Logging: </strong> Organizations monitor metrics and logs by capturing, categorizing, and then analyzing data and logs generated 
+                                by applications and infrastructure to see how application and infrastructure performance impacts the experience of their product’s end user.<br><br>
+                            </li>
+
+                            <li id="Communication">
+                                <strong> Improved Communication and Collaboration: </strong> The use of DevOps tooling and automation of the software delivery process establishes strong 
+                                team collaboration  around information sharing and facilitating communication by physically bringing together the workflows and responsibilities of development and operations.
+                            </li>
+                        </ul>
+
+                        <h4 id="Tools" class="titles"> DevOps Tools </h4>
+                        <p>
+                            Below in the pictures you can see some of the most common tools used in the DevOps methodology.
+                        </p>
+
+                        <img class="img_content" src="./Images/DevOps/DevOps-engineer-job-roles-and-responsibilities.png" width="500" height="270" alt="image"/> 
+                        <br><p class="caption"> Appropriate and most common tools use for each step of the methodology </p><br>
+
+                        <img class="img_content" src="./Images/DevOps/devops-infinity-1-1.png" width="500" height="320" alt="image"/> 
+                        <br><p class="caption"> A sumption of most common tools use for each category of the methodology </p><br>
+
+                    </article>
+                    
+                </div>
+
+            </div>
+
+            <div class="item-5">
+                <h4> Sources: </h4>
+                <div class="sources">
+                    
+                    <a class="source_link" href="https://aws.amazon.com/devops/what-is-devops/"> AWS.Amazon </a>
+                    <a class="source_link" href="https://en.wikipedia.org/wiki/DevOps#:~:text=DevOps%20is%20a%20set%20of,delivery%20with%20high%20software%20quality."> Wikipedia </a>
+                    <a class="source_link" href="https://devops.com/"> DevOps.com </a>
+
+                </div>
+
+                <p class="author"> @ Nikos Siachamis </p>
+
+            </div>
+            
+        </div>
+
+    </body>
+
+</html>

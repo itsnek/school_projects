@@ -1,0 +1,48 @@
+
+<h2> {{title}} </h2>
+
+<div class="searchbox">
+    <img id="search_icon" src="" alt="search icon">
+    <input type="search" id="search_fav" name="search" required placeholder="Search book in favourites.">
+</div>
+
+<div id="booklist">
+    {{#each favourite_books}}
+    <div id="fav_book{{@index}}" class="fav_book">
+
+        <div class="cover">
+        
+            <img class="cover" src="{{cover}}" width="125" height="auto"></img>
+
+        </div>
+        
+        <div class="text">
+
+            <div id="filter{{@index}}" class="filter">
+
+                <h3 class="title"> {{title}} </h3>
+                <p class="details" id="author"> Author: {{author}} </p>
+                <p class="details"> Code: {{workId}} </p>
+                
+                {{#if description}}
+                    <p class="description"> Description: {{description}}</p>
+                {{/if}}
+
+            </div>
+
+            <div class="edit"> 
+                <img class="edit_icon" src="" alt="trash can icon"></img>
+                <a class="actions" href="/Favourite_books/edit/{{workId}}" onclick="deleteRequest('./Favourite_books/edit/{{workId}}')"> Edit book</a>
+            </div>
+
+            <div class="delete"> 
+                <img class="bin_icon" src="" alt="trash can icon"></img>
+                <a class="actions" href="/Favourite_books" onclick="deleteRequest('./Favourite_books/delete/{{workId}}')"> Delete from favourites</a>
+            </div>
+
+        </div>
+
+
+    </div>
+    {{/each}}
+</div>

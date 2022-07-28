@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: Raleway;
+    background-color: gray;
+}
+
+html {
+    margin: 0;
+    font-size: 18px;
+}
+
+body {
+    background-color:gray;
+    text-align:center;
+}
+
+/* Index */
+
+ul.contact-list{
+    list-style-type: none;
+}
+
+ul.navigationlist button.menu_button{
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 17px;
+    background-color: black;
+    color: rgb(202, 202, 202);
+}
+
+img.logo-image{
+    border-radius: 15px;
+    box-shadow: 0px 10px 15px 5px;
+}
+
+nav.main-nav{
+    text-decoration: none;
+    position: relative;
+    right: 10px;
+}
+
+li.list-item{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+ul.navigationlist button.menu_button:hover{
+    background-color: rgb(53, 34, 53);
+    color: rgb(220, 220, 220);
+    transition: 0.5s;
+}
+
+section > p{
+    text-align: justify;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* About me */
+article.tabcontent h1{
+    font-size: 29px;
+}
+
+p.bio_text {
+    text-align: justify;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+article#FAQs > p{
+    text-align: justify;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+span.question{
+    font-style: italic;
+    font-weight: bold;
+}
+
+span.marker{
+    color:rgb(0, 204, 0);
+}
+
+/* Contact-footer */
+
+footer#contact ul.contact-list{   
+    float:inherit;
+    display: flex; 
+    justify-content: center;
+    list-style-type: none;
+}
+
+footer#contact ul.contact-list li{
+    margin-left: 5%;
+    margin-right: 7.5%;
+}
+
+footer#contact ul.contact-list a:hover{
+    color:rgb(208, 208, 208);
+    transition: 0.5s;
+}
+
+footer#contact ul.contact-list a.link:visited:hover{
+    color:rgb(208, 208, 208);
+    transition: 0.5s;
+}
+
+footer#contact ul.contact-list a.link:visited{
+    color:rgb(175, 175, 175);
+}
+
+footer#contact ul.contact-list img{
+    display: block;
+    margin-left: 10%;
+}
+
+footer#contact ul.contact-list img.logo#gmail{
+    margin-bottom: -3%;
+    margin-left: 33%;
+}
+
+footer#contact ul.contact-list img.logo#github{
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+footer#contact ul.contact-list li.github_link{
+    margin-top: 5px;
+}
+
+footer#contact a.link{
+    text-decoration: none;
+    color: black;
+}
+
+/* Portofolio */
+
+div.tabcontent a#link:link{
+    text-decoration: none;
+    color:indigo;
+}
+
+div.tabcontent a#link:hover{
+    color:rgb(132, 28, 206);
+    transition: 0.5s;
+}
+
+div.tabcontent a#link:visited{
+    color:rgb(110, 24, 172);
+}
+
+div.tabcontent a#link:visited:hover{
+    color:rgb(132, 28, 206);
+    transition: 0.5s;
+}
+
+p.illustration_text{
+    text-align: justify;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+div#Illustrations article{
+    margin-top: 90px;
+}
+
+/* header image */
+body header.who img.logo-image{
+    width: 135px;
+    height: 150px;
+    border-radius: 15px;
+    margin: 10px;
+    float:left;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 15px 0px;
+}
+
+header.who h2.name{
+    float: left;
+    margin-left: 5px;
+}
+
+header.who h1.title{
+    font-size: 50px;
+}
+
+/* Contact - Tab */
+
+form{
+    overflow: auto;
+}
+
+input#submit_button{
+    width: 70px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: lightgray;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+input{
+    width: 200px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+::placeholder{ /* Chrome, Firefox, Safari, Opera */
+    color: rgba(0, 0, 0, 0.45);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgba(0, 0, 0, 0.45);
+}
+
+main form div.names{
+    display: inline-flex;
+}
+
+main form div.email{
+    position: relative; 
+    right: 100px;
+}
+

@@ -1,0 +1,39 @@
+<h2> Edit book. </h2>
+
+<form id="bookform">
+
+    <fieldset>
+
+        <legend> Book Data: </legend>
+
+        <div class="book_data">
+
+            <div class="labels">
+                <label for="title" class="required"> Title: </label> 
+                <input type="text" id="title" name="title" minlength="2" required value="{{title}}">
+            </div>
+
+            <div class="labels">
+                <label for="author" class="required"> Author: </label>
+                <input type="text" id="author" name="author" minlength="2" required value="{{author}}">
+            </div>
+
+            <div class="labels">
+                <label for="code" class="required"> Code: </label>
+                <input type="text" id="code" name="code" readonly value="{{code}}">
+            </div>
+
+            <div class="labels">
+
+                <label for="description" class="required"> Description: </label>
+                <textarea id="description" name="description">{{description}}</textarea>
+
+            </div>
+
+        </div>
+
+        <button id="submit_button" type="submit" onclick="change()"><a id="save_btn" href="/Favourite_books" onclick="change()"> Save </a> </button>
+
+    </fieldset>
+
+</form>

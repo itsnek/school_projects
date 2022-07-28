@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lan=en>
+
+    <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <meta charset="UTF-8">
+        <meta name= "author" content="Nikos Siachamis">
+        <link rel="stylesheet" href="./css/styles.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./js/scripts.js"></script>
+
+        <title> 
+            Penguin Random House
+        </title>
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <h3 class="site_name"> Penguin Random House </h3>
+
+            <nav class="main_nav">
+
+                <a class="links" href="./Home">Home</a>
+                <a class="links" href="./Favourite_books">Favourite books</a>
+    
+            </nav>
+
+        </header>
+
+        <main>
+            
+            <div class="search_box">
+                
+                <label for="search" class="search_label"> Search the book/author you are looking for: </label> 
+                <input type="search" id="search" name="search" required placeholder="Search book.">
+
+                <button id="submit_btn">
+                    Submit
+                </button>
+
+            </div>
+
+            <div id="search_results"></div>
+
+        </main>
+
+        <footer>
+            @ Nikos Siachamis
+        </footer>
+
+    </body>
+
+</html>

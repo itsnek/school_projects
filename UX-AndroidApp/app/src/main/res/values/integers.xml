@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="default_temp_cold">26</integer>
+    <integer name="default_temp_heat">27</integer>
+    <integer name="default_temp_humid">24</integer>
+    <integer name="default_temp_air">25</integer>
+</resources>

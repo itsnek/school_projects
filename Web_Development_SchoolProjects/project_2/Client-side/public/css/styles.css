@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: Raleway;
+    background-color: #ffeee1;
+}
+
+html{
+    margin: 0;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: fit-content;
+    gap: 20px;
+    background-color: rgb(242, 85, 0);
+    z-index: 1;
+}
+
+.site_name{
+    background-color: inherit;
+    margin-left: 10px;
+}
+
+.main_nav{
+    background-color: inherit;
+}
+
+a.links{
+    height:max-content;
+    text-decoration: none;
+    color: blanchedalmond;
+    background-color: inherit;
+}
+
+a.links:hover{
+    color: white;
+    background-color: rgb(200, 70, 0);
+    transition: 0.5s;
+}
+
+.search_box{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 20em;
+    flex-direction: column;
+    line-height: 1.6;
+    font-size: 22px;
+    margin-top: 10%;
+}
+
+#search_results{
+    display: flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    flex-direction: column;
+    flex-basis: auto;
+    line-height: 1.6;
+    margin-bottom: 20%;
+    margin-left: 40%;
+}
+
+.work-details{
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+    line-height: 0.5;
+}
+
+.data{
+    line-height: 1;
+}
+
+li.work{
+    display: flex;
+    align-items:center;
+    flex-direction: row;
+    gap: 10px;
+    list-style: none;
+    margin-bottom: 5%;
+}
+
+#submit_btn{
+    font-size: 18px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+#search{
+    font-size: 20px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.add_fav{
+    display: inline;
+    position: relative;
+    right: 10px;
+}
+
+.save_label{
+    font-size: 14px;
+    position: relative;
+    bottom: 20px;
+    right: 8px;
+    text-decoration: none;
+    color: black;
+}
+
+.heart{
+    width: 40px;  
+    position: relative;
+    bottom: 7px;
+}
+
+#favourite_booklist{
+    text-align: center;
+    margin: 10%;
+}
+
+#booklist{
+    text-align: center;
+}
+
+.filter{
+    line-height: 0.7;
+}
+
+#search_fav{
+    width:max-content;
+    border-radius: 10px;
+    float:inline-start;
+}
+
+#search_icon{
+    width: 20px;
+    float: inline-start;
+    position: relative;
+    top: 5px;
+}
+
+.edit_icon{
+    width: 22px;
+    position: relative;
+    top: 4px;
+}
+
+.bin_icon{
+    width: 22px;
+    position: relative;
+    top: 4px;
+}
+
+.delete{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+a.actions{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+a.actions:hover{
+    color: rgb(118, 118, 118);
+    transition: 0.5s;
+}
+
+#save_btn{
+    text-decoration: none;
+    color: black;
+}
+
+p.description{
+    line-height: 1.4;
+    text-align: justify;
+    width: 200px;
+}
+
+#author{
+    line-height: 1.4;
+}
+
+footer{
+    position: static;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Edit page */
+
+fieldset{
+    display: block;
+    border-radius: 10px;
+}
+
+legend{
+    text-align: left;
+    font-size: 18px;
+}
+
+.labels{
+    margin: 20px;
+}
+
+.labels > input {
+    display: block;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 250px;
+    height: fit-content;
+}
+
+.labels > textarea{
+    display: block;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 300px;
+    height: 100px;
+}
+
+input#code{
+    border-color: rgb(150, 150, 150);
+    color:rgb(109, 109, 109);
+}
+
+.book_data{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+#submit_button{
+    border-radius: 8px;
+    font-size: 16px;
+    margin: 15px;
+    margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 700px) { 
+    
+    *{
+        font-size: 14px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+
+    h3{
+        font-size: 16px;
+    }
+
+    a.links{
+        font-size: 12px;
+        padding: 17px 16px;
+    }
+
+    a.links:hover{
+        font-size: 14px;
+    }
+
+    #search,#submit_btn{
+        font-size: 14px;
+    }
+
+    #search{
+        width: 60%;
+    }
+
+    #favourite_booklist{
+        margin-top: 20%;
+    }
+
+    .fav_book{
+        margin-top: 50px;
+        text-align: inherit;
+    }
+    
+    .text{
+        text-align: left;
+        display: inline-block;
+    }
+    
+    div.cover{
+        margin-right: 10px;
+    }
+
+}
+
+@media only screen and (min-width: 700px) { 
+    
+    *{
+        font-size: 16px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    h3{
+        font-size: 18px;
+    }
+    
+    a.links{
+        font-size: 15px;
+        padding: 17px 16px;
+        padding-top: 18px;
+    }
+
+    a.links:hover{
+        font-size: 17px;
+    }
+
+    #search,#submit_btn{
+        font-size: 16px;
+    }
+
+    #favourite_booklist{
+        margin-top: 15%;
+    }
+
+    .fav_book{
+        margin-top: 50px;
+        text-align: inherit;
+    }
+    
+    .text{
+        text-align: left;
+        display: inline-block;
+    }
+    
+    div.cover{
+        text-align: left;
+        display: inline-block;        
+        margin-right: 10px;
+        vertical-align: top;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) { 
+
+    *{
+        font-size: 18px;
+    }
+
+    h2{
+        font-size: 22px;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+    
+    a.links{
+        font-size: 16px;
+        padding: 20px 16px;
+        padding-top: 21px;
+    }
+
+    a.links:hover{
+        font-size: 18px;
+    }
+
+    #search,#submit_btn{
+        font-size: 18px;
+    }
+
+    #favourite_booklist{
+        margin-top: 10%;
+    }
+
+    .fav_book{
+        margin-top: 50px;
+        text-align: inherit;
+        padding-bottom: 20px;
+    }
+    
+    .text{
+        text-align: left;
+        display: inline-block;
+    }
+    
+    div.cover{
+        text-align: left;
+        display: inline-block; 
+        padding-bottom: 20px;
+        margin-right: 10px;
+        vertical-align: top;
+    }
+
+}

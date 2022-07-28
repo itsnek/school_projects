@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <meta charset="UTF-8">
+        <meta name= "author" content="Nikos Siachamis">
+        <link rel="stylesheet" href="./styles.css"/>
+        <script src="scripts.js"></script>
+        <link rel="shortcut icon" href="./Images/Untitled.png" type="image/x-icon" />
+
+        <title> 
+            CS_Newspaper - DevOps Article 
+        </title>
+
+    </head>
+
+    <body>
+        
+        <img src="./Images/Untitled.png" width="35" height="35" alt="CS_Newspaper_icon">
+        <h2 class="Webpage-title"><a href="./index.html">CS_Newspaper</a></h2>
+
+        <label class="mode_switch">
+
+            <input id="darkmode_switch" type="checkbox" onclick="darkmode('register')">
+            <span class="slider round"></span>
+
+            <img class="moon" src="./Images/moon_off.png" alt="moon_off" width="23" height="auto">
+
+        </label>
+
+        <div class="sub-nav" >
+
+            <img class="dropbtn" src="./Images/nav_icon.png" alt="Menu" width="32" height="25">
+            <div class="dropdownMenu">
+
+                <a class="links" href="./benefits.html"> Benefits </a>
+                <a class="links" href="./practices.html"> Practices </a>
+                <a class="links" href="./register.html"> Register </a>
+
+            </div>
+
+        </div>
+
+        <div class="grid-container">
+            <div class="item1"> 
+                Registry
+                <p class="subtitle"> Happy for everyone's contribution </p>
+            </div>
+
+            <div id="register-form" class="item-n items-n-s">
+
+                <form action="mailto:nikosgr9917@gmail.com" autocomplete="on">
+
+                    <fieldset>
+
+                        <legend> Personal Data: </legend>
+
+                        <div class="names">
+                            <div class="labels">
+                                <label for="fname" class="required"> First name: </label> 
+                                <input type="text" id="fname" name="fname" minlength="2" maxlength="15" required placeholder="Nikos"><br/><br/>
+                            </div>
+        
+                            <div class="labels">
+                                <label for="lname" class="required"> Last name: </label>
+                                <input type="text" id="lname" name="lname" minlength="2" maxlength="25" required placeholder="Siachamis"><br/>
+                            </div>
+                            
+                        </div>
+        
+                        <div class="addresses">
+    
+                            <div class="labels">
+                                <label for="email" class="required"> E-mail: </label>
+                                <input type="email" id="email" name="email" multiple required placeholder="nsiachamis@gmail.com"><br/><br/>
+                            </div>
+    
+                            <div class="labels">
+                                <label for="address"> Address: </label>
+                                <input type="text" id="address" name="address" placeholder="Thetidos 8 , Faliro"><br/><br/>
+                            </div>
+    
+                        </div>
+    
+                        <div class="extra">
+    
+                            <div class="labels">
+                                <label for="date"> Birth-day: </label> 
+                                <input type="date" id="date" name="birthday" min="1950-01-01" max="2006-01-01" autocomplete="off"><br/><br/>
+                            </div>
+    
+                            <div class="labels">
+                                <label for="country" class="required"> Country: </label> 
+                                <input list="countries" id="country" name="country" required placeholder="Greece"><br/><br/>
+                                <datalist id="countries">
+                                    <option value="England">
+                                    <option value="Greece">
+                                    <option value="Belgium">
+                                    <option value="USA">
+                                    <option value="Canada">
+                                  </datalist>
+                            </div>
+    
+                            <div class="labels">
+                                <label for="telephone" class="required"> Telephone: </label> 
+                                <input type="tel" id="telephone" name="telephone" required minlength="10"
+                                pattern="69[0-9]{8}" title="Greece's telephone number pattern: 69...(10 numbers in total)" 
+                                placeholder="69********"><br/><br/>
+                            </div>
+    
+                        </div>
+            
+                        <div class="credentials">
+    
+                            <div class="labels">
+                                <label for="username" class="required"> Username: </label> 
+                                <input type="text" id="username" name="username" required placeholder="nikos9" minlength="2" maxlength="20"><br/><br/>
+                            </div>
+                            
+                            <div class="labels">
+
+                                <label for="password" class="required"> Password: </label> 
+                                <input class="password" type="password" id="password" name="password" required 
+                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"  
+                                placeholder= "&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" minlength="8" maxlength="20">
+                                <input id="checkbox_first" class="checkbox" type="checkbox"><label class="password">Show Password</label><br/><br/>
+
+                            </div>
+    
+                            <div class="labels">
+
+                                <label for="password_confirmation" class="required"> Confirm password: </label> 
+                                <input class="password" type="password" id="password_confirmation" name="password confirmation" required 
+                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" 
+                                placeholder= "&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" minlength="8" maxlength="20">
+                                <input id="checkbox_second" class="checkbox" type="checkbox"><label class="password">Show Password</label><br/><br/>
+                                
+                            </div>
+    
+                        </div>
+
+                    </fieldset>
+
+                    <div class="questionary">
+
+                        <fieldset id="questionary">
+
+                            <legend> Questionary: </legend>
+
+                            <details class="intro">
+                                <summary>
+                                    Please fill up this questionary.
+                                </summary>
+                                <p>
+                                    In order to accept you as a contributor we want to know some things about your interests, 
+                                    so as to define what will be your role in this webpage.Thank you for your time!<br>
+                                    P.S. The fields that contain ' <span class="star">*</span> ' at the end require an answer.
+                                </p>
+                            </details><br/><br/>
+
+                            <div class="labels">
+                                <label for="degree" class="required"> Have you got any university degree? </label> 
+                                <input list="degrees" id="degree" name="degree" required multiple placeholder="Computer Science">
+                                <datalist id="degrees" >
+                                    <option value="Computer Science">CS</option>
+                                    <option value="Engineering"></option>
+                                    <option value="Mathematics">Maths</option>
+                                    <option value="Philosophy"></option>
+                                    <option value="Physics"></option>
+                                </datalist><br/><br/>
+                            </div>
+                            
+                            <div class="labels">
+                                <label for="university" class="required"> In which university? </label> 
+                                <input list="universities" id="university" name="university" required multiple placeholder="Athens University of Economics and Business">
+                                <datalist id="universities">
+                                    <option value="Athens University of Economics and Business">AUEB</option>
+                                    <option value="Aristotle University of Thessaloniki">AUT</option>
+                                    <option value="National and Kapodistrian University of Athens">NKUA</option>
+                                    <option value="National Technical University of Athens">NTUA</option>
+                                    <option value="Agricultural University of Athens">AUA</option>
+                                </datalist><br/><br/>
+                            </div>
+
+                            <div class="labels">
+                                <label for="academic_fields" class="required"> In which academic fields are you interested in? </label> 
+                                <input list="fields" id="academic_fields" name="academic_fields" required multiple placeholder="DevOps methodology">
+                                <datalist id="fields">
+                                    <option value="Artificial Intelligence">AI</option>
+                                    <option value="Web Development">Web Dev</option>
+                                    <option value="Software Development"></option>
+                                    <option value="Economics"></option>
+                                    <option value="Management"></option>
+                                </datalist><br/><br/>
+                            </div>
+
+                            <div id="yesno" class="labels">
+                                <label for="academic_fields"> Have you ever attended any seminar for these fields? </label> 
+                                    <div class="answer">
+                                        <input type="radio" id="yes" name="answer" value="yes">
+                                        <label class="answer" for="yes">yes</label>
+                                        <input type="radio" id="no" name="answer" value="no">
+                                        <label class="answer" for="no">no</label>
+                                    </div>
+                                <br/><br/>
+                            </div>
+
+                            <div class="labels">
+                                <label for="association" class="required"> Have you ever worked in a profession that associates with these fields? </label> 
+                                <input type="text" id="association" name="association" required placeholder="Yes/no, profession" >
+                                <br/><br/>
+                            </div>
+
+                            <div class="labels">
+                                <label for="profession"> What is your profession this period? </label> 
+                                <input type="text" id="profession" name="profession" placeholder="Software engineer" >
+                                <br/><br/>
+                            </div>
+
+                            <div class="labels">
+                                <label for="academic_book"> What academic book have you read in the last year that has special meaning to you and why? </label> 
+                                <input type="text" id="academic_book" name="academic_book" placeholder="DevOps methodology" >
+                                <br/><br/>
+                            </div>
+                            
+                            <div class="labels">
+                                <label for="role" class="required"> How will you contribute to this website, what role do you wish to have? </label> 
+                                <input type="text" id="role" name="role" required placeholder="Author" >
+                                <br/><br/>
+                            </div>
+
+                            <div class="labels">
+                                <label for="experience_role" class="required"> Do you have any previous experience in this role? </label> 
+                                <input type="text" id="experience_role" name="experience_role" required placeholder="Two years working experience in CS_Newspaper.">
+                                <br/><br/>
+                            </div>
+
+                            <div class="labels">
+                                <label for="experience_website" class="required"> Do you have any experience in the organization and functionality of a website? </label> 
+                                <input type="text" id="experience_website" name="experience_website" required placeholder="Yes but main stuff.">
+                                <br/><br/>
+                            </div>
+
+                        </fieldset>
+
+                    </div>    
+    
+                    <input id="submit_button" type="submit" value="Submit"><br>
+    
+                </form>
+
+            </div>
+            
+            <div class="item-5">
+                <h4> Sources: </h4>
+                <div class="sources">
+                    
+                    <a class="source_link" href="https://aws.amazon.com/devops/what-is-devops/"> AWS.Amazon </a>
+                    <a class="source_link" href="https://en.wikipedia.org/wiki/DevOps#:~:text=DevOps%20is%20a%20set%20of,delivery%20with%20high%20software%20quality."> Wikipedia </a>
+                    <a class="source_link" href="https://devops.com/"> DevOps.com </a>
+
+                </div>
+                
+                <img class="date_icon" alt="date_icon" width="25" height="auto">
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

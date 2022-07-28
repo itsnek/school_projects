@@ -1,0 +1,64 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.airconditionerapp.MainActivity"
+    >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        android:icon="@drawable/ic_settings_icon_both"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/Dark_mode"
+                android:checkable="true"
+                android:orderInCategory="100"
+                android:title="@string/Dark_mode"
+                app:showAsAction="ifRoom"
+                tools:targetApi="n" />
+
+            <item
+                android:id="@+id/HelpingMess"
+                android:checkable="true"
+                android:orderInCategory="100"
+                android:title="@string/HelpingMessages"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/fontSize"
+                android:orderInCategory="100"
+                android:title="@string/fontSize"
+                app:showAsAction="never">
+
+                <menu android:id="@id/fontSize">
+                    <item
+                        android:id="@+id/defaultSize"
+                        android:checkable="true"
+                        android:checked="true"
+                        android:orderInCategory="100"
+                        android:title="@string/defaultSize"
+                        app:showAsAction="ifRoom|withText"
+                        tools:targetApi="n" />
+
+                    <item
+                        android:id="@+id/mediumSize"
+                        android:checkable="true"
+                        android:orderInCategory="100"
+                        android:title="@string/mediumSize"
+                        app:showAsAction="ifRoom|withText"
+                        tools:targetApi="n" />
+
+                    <item
+                        android:id="@+id/largeSize"
+                        android:checkable="true"
+                        android:orderInCategory="100"
+                        android:title="@string/largeSize"
+                        app:showAsAction="ifRoom|withText"
+                        tools:targetApi="n" />
+                </menu>
+            </item>
+        </menu>
+    </item>
+</menu>

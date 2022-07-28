@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C2D5C2"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_main" />
+
+    <TextView
+        android:id="@+id/textOnOff"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:text="@string/Power_text"
+        android:fontFamily="@font/roboto_light"
+        android:textColor="@color/Color"
+        android:textStyle="bold"
+        android:textSize="18sp"
+
+        app:layout_anchor="@+id/PowerSwitch"
+        app:layout_anchorGravity="top|center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.955" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/PowerSwitch"
+        android:layout_width="80dp"
+        android:layout_height="32dp"
+        android:drawableBottom="@android:drawable/ic_lock_power_off"
+        android:padding="3dp"
+        android:textOff="@string/PowerOff"
+        android:textOn="@string/PowerOn"
+        android:theme="@style/SCBSwitch"
+
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="bottom|center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.977" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutTimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:paddingBottom="45dp"
+        android:visibility="invisible"
+
+        app:layout_anchor="@+id/PowerSwitch"
+        app:layout_anchorGravity="top|end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.400"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/Icon"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/roboto_light"
+
+            app:layout_anchor="@+id/PowerSwitch"
+            app:layout_anchorGravity="top|center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.955" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/roboto_light"
+            android:gravity="center"
+            android:text=" "
+            android:textColor="@color/Color"
+            android:textSize="25sp"
+            android:textStyle="bold"
+
+            app:layout_anchor="@+id/linearLayout2"
+            app:layout_anchorGravity="end|center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.955" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="end|bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.266"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/Status_Type"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/roboto_light"
+
+            app:layout_anchor="@+id/PowerSwitch"
+            app:layout_anchorGravity="top|center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.955" />
+
+        <TextView
+            android:id="@+id/Temp"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/roboto_light"
+            android:gravity="center"
+            android:text=" "
+            android:textColor="@color/Color"
+            android:textSize="25sp"
+            android:textStyle="bold"
+
+            app:layout_anchor="@+id/linearLayout2"
+            app:layout_anchorGravity="end|center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.955" />
+
+        <TextView
+            android:id="@+id/intensity"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/roboto_light"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/Color"
+            android:textSize="25sp"
+            android:textStyle="bold"
+
+            app:layout_anchor="@+id/PowerSwitch"
+            app:layout_anchorGravity="top|center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.955" />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

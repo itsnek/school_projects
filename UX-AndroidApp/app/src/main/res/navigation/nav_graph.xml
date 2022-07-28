@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/MainFragment">
+
+    <fragment
+        android:id="@+id/MainFragment"
+        android:name="com.example.airconditionerapp.MainFragment"
+        android:label="@string/main_fragment_label"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_MainFragment_to_ModesFragment"
+            app:destination="@id/ModesFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"/>
+        <action
+            android:id="@+id/action_MainFragment_to_TimerFragment"
+            app:destination="@id/TimerFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"/>
+        <action
+            android:id="@+id/action_MainFragment_to_PositionFragment"
+            app:destination="@id/PositionFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"/>
+        <action
+            android:id="@+id/action_Home_Button"
+            app:destination="@id/MainFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/ModesFragment"
+        android:name="com.example.airconditionerapp.ModesFragment"
+        android:label="@string/Modes_fragment_label"
+        tools:layout="@layout/fragment_modes">
+
+        <action
+            android:id="@+id/action_ModesFragment_to_MainFragment"
+            app:destination="@id/MainFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"/>
+        <action
+            android:id="@+id/action_ModesFragment_to_ColdFragment"
+            app:destination="@id/ColdFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"/>
+        <action
+            android:id="@+id/action_ModesFragment_to_HeatFragment"
+            app:destination="@id/HeatFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"/>
+        <action
+            android:id="@+id/action_ModesFragment_to_HumidFragment"
+            app:destination="@id/HumidFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"/>
+        <action
+            android:id="@+id/action_ModesFragment_to_AirFragment"
+            app:destination="@id/AirFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"/>
+        <action
+            android:id="@+id/action_Home_Button"
+            app:destination="@id/MainFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/ColdFragment"
+        android:name="com.example.airconditionerapp.ColdFragment"
+        android:label="@string/Cold_fragment_label"
+        tools:layout="@layout/fragment_cold">
+
+        <action
+            android:id="@+id/action_ColdFragment_to_ModesFragment"
+            app:destination="@id/ModesFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"/>
+        <action
+            android:id="@+id/action_ColdFragment_to_IntesityFragment"
+            app:destination="@id/IntesityFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"/>
+        <action
+            android:id="@+id/action_Home_Button"
+            app:destination="@id/MainFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/HeatFragment"
+        android:name="com.example.airconditionerapp.HeatFragment"
+        android:label="@string/Heat_fragment_label"
+        tools:layout="@layout/fragment_heat">
+
+        <action
+            android:id="@+id/action_HeatFragment_to_ModesFragment"
+            app:destination="@id/ModesFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"/>
+        <action
+            android:id="@+id/action_HeatFragment_to_IntesityFragment"
+            app:destination="@id/IntesityFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"/>
+        <action
+            android:id="@+id/action_Home_Button"
+            app:destination="@id/MainFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/HumidFragment"
+        android:name="com.example.airconditionerapp.HumidFragment"
+        android:label="@string/Humid_fragment_label"
+        tools:layout="@layout/fragment_humid">
+
+        <action
+            android:id="@+id/action_HumidFragment_to_ModesFragment"
+            app:destination="@id/ModesFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"/>
+        <action
+            android:id="@+id/action_HumidFragment_to_IntesityFragment"
+            app:destination="@id/IntesityFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"/>
+        <action
+            android:id="@+id/action_Home_Button"
+            app:destination="@id/MainFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/AirFragment"
+        android:name="com.example.airconditionerapp.AirFragment"
+        android:label="@string/Air_fragment_label"
+        tools:layout="@layout/fragment_air">
+
+        <action
+            android:id="@+id/action_AirFragment_to_ModesFragment"
+            app:destination="@id/ModesFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"/>
+        <action
+            android:id="@+id/action_AirFragment_to_IntesityFragment"
+            app:destination="@id/IntesityFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"/>
+        <action
+            android:id="@+id/action_Home_Button"
+            app:destination="@id/MainFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/IntesityFragment"
+        android:name="com.example.airconditionerapp.IntesityFragment"
+        android:label="@string/Intesity_fragment_label"
+        tools:layout="@layout/fragment_intesity">
+
+        <action
+            android:id="@+id/action_IntensityFragment_to_ColdFragment"
+            app:destination="@id/ColdFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"/>
+        <action
+            android:id="@+id/action_IntensityFragment_to_MainFragment"
+            app:destination="@id/MainFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"/>
+        <action
+            android:id="@+id/action_Home_Button"
+            app:destination="@id/MainFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/TimerFragment"
+        android:name="com.example.airconditionerapp.TimerFragment"
+        android:label="@string/Timer_fragment_label"
+        tools:layout="@layout/fragment_timer">
+
+        <action
+            android:id="@+id/action_TimerFragment_to_MainFragment"
+            app:destination="@id/MainFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"/>
+        <action
+            android:id="@+id/action_TimerFragment_to_TimerFragmentAlt"
+            app:destination="@id/TimerFragmentAlt"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"/>
+        <action
+            android:id="@+id/action_Home_Button"
+            app:destination="@id/MainFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/TimerFragmentAlt"
+        android:name="com.example.airconditionerapp.TimerFragmentAlt"
+        android:label="@string/Timer_alt_fragment_label"
+        tools:layout="@layout/fragment_timer_alt">
+
+        <action
+            android:id="@+id/action_TimerFragmentAlt_to_MainFragment"
+            app:destination="@id/MainFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"/>
+        <action
+            android:id="@+id/action_TimerFragmentAlt_to_TimerFragment"
+            app:destination="@id/TimerFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"/>
+        <action
+            android:id="@+id/action_Home_Button"
+            app:destination="@id/MainFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/PositionFragment"
+        android:name="com.example.airconditionerapp.PositionFragment"
+        android:label="@string/Position_fragment_label"
+        tools:layout="@layout/fragment_position">
+
+        <action
+            android:id="@+id/action_PositionFragment_to_MainFragment"
+            app:destination="@id/MainFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"/>
+        <action
+            android:id="@+id/action_Home_Button"
+            app:destination="@id/MainFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"/>
+    </fragment>
+
+</navigation>

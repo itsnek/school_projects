@@ -1,0 +1,23 @@
+{
+  "name": "server-side",
+  "version": "1.0.0",
+  "description": "Server side for a book shop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "book",
+    "server",
+    "data"
+  ],
+  "author": "Nikos Siachamis",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

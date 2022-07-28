@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppTheme.Small">
+        <item name="textTitle">@style/default_title_text</item>
+        <item name="android:spinnerItemStyle">@style/spinner_default</item>
+    </style>
+
+    <style name="AppTheme.Medium">
+        <item name="textTitle">@style/medium_title_text</item>
+        <item name="android:spinnerItemStyle">@style/spinner_medium</item>
+    </style>
+
+    <style name="AppTheme.Large">
+        <item name="textTitle">@style/large_title_text</item>
+        <item name="android:spinnerItemStyle">@style/spinner_large</item>
+    </style>
+
+
+    <!-- SMALL FONT SIZE -->
+    <style name="default_title_text">
+        <item name="android:textSize">22sp</item>
+        <item name="android:fontFamily">@font/cabin</item>
+    </style>
+
+
+    <!-- MEDIUM FONT SIZE -->
+    <style name="medium_title_text">
+        <item name="android:textSize">28sp</item>
+<!--        <item name="android:textStyle">bold</item>-->
+        <item name="android:fontFamily">@font/cabin</item>
+    </style>
+
+    <!-- LARGE FONT SIZE -->
+    <style name="large_title_text">
+        <item name="android:textSize">34sp</item>
+        <item name="android:fontFamily">@font/cabin</item>
+    </style>
+
+    <!-- SPINNER STYLES -->
+    <style name="spinner_default">
+        <item name="android:textSize">24sp</item>
+        <item name="android:paddingTop">0dip</item>
+    </style>
+
+    <style name="spinner_medium">
+        <item name="android:textSize">30sp</item>
+        <item name="android:paddingTop">0dip</item>
+    </style>
+
+    <style name="spinner_large">
+        <item name="android:textSize">36sp</item>
+        <item name="android:paddingTop">0dip</item>
+    </style>
+
+</resources>

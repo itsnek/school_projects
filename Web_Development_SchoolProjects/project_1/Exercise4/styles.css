@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+@font-face{
+    font-family: myFirstFont;
+    src: url('./Sansation_Light/Sansation_Light.woff');
+}
+
+*{
+    font-family: Raleway;
+    background-color: #282b2e;
+    font-size: 22px;
+}
+
+h2.Webpage-title{
+    display: inline;
+}
+
+h2.Webpage-title > a{
+    color: aliceblue;
+    font-family: myFirstFont;
+    font-size: 25px;
+    position: relative;
+    bottom: 8px;
+    text-decoration: none;
+}
+
+/* Site navigation menu */
+
+div.sub-nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+div.sub-nav:hover img.dropbtn{
+    float: right;
+}
+
+img.dropbtn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 7px;
+    margin: 5px;
+    padding: 5px;
+}
+
+img.dropbtn:hover{
+    opacity: 1;
+    background-color: rgb(255,255,255,.2);
+    color: rgb(255,255,255,.8) ;
+    transition: 0.4s;
+}
+
+.dropdownMenu{
+    display: none;
+}
+
+div.sub-nav:hover div.dropdownMenu{
+    display: block;
+    position: relative;
+    top: 55px;
+}
+
+/* Links inside the dropdown */
+a.links {
+    display: block;
+    color: aliceblue;
+    padding: 0px 12px 16px;
+    text-decoration: none;
+}
+
+a.links:hover {
+    color:  #6a7c94;
+    transition: 0.4s;
+}
+
+div.grid-container div.item1 { 
+    grid-area: header; 
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+div.grid-container div.item2 { 
+    grid-area: menu; 
+}
+
+div.grid-container div.item3 {
+    grid-area: main; 
+}
+
+div.grid-container div.item4 { 
+    grid-area: right; 
+}
+
+div.grid-container div.item5 { 
+    grid-area: footer; 
+    text-align: center;
+    font-size: 25px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header header header header'
+        'menu main main main right right'
+        'footer footer footer footer footer footer';
+    grid-gap: 5px;
+    background-color: #282b2e;
+    border-radius: 7px;
+}
+
+.grid-container > div {
+    background-color: lightgray;
+    font-size: 30px;
+    border-radius: 7px;
+}
+
+div.grid-container div.item1 p.subtitle{
+    background-color: lightgray;
+    font-size: 16px;
+}
+
+/* Paragraphs */
+h4.titles{
+    font-size: 25px;
+    text-align: center;
+    background-color: lightgray;
+}
+
+article, section, article > p, section > p , ul.lists , li , strong , div.item3 p{
+    background-color: lightgray;
+}
+
+article, section{
+    text-align: center;
+}
+
+article p , section p{
+    text-align:justify;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Menu  */
+nav.sub-nav{
+    border-radius: 7px;
+    padding-left: 10px;
+}
+
+h4.title{
+    font-weight: bold;
+    /* display: inline-block; */
+    text-align: center;
+    border-radius: 7px;
+    font-size: 25px;
+}
+
+ul.subnavigationlist{
+    position: relative;
+    bottom: 40px;
+    display: inline;
+    list-style: none;
+}
+
+nav.sub-nav , h4.title , ul.subnavigationlist , li.sublist-item , li.sublist-item > a{
+    background-color: lightgray;
+}
+
+ul.subnavigationlist li.sublist-item a{
+    text-decoration: none;
+    color:black;
+}
+
+ul.subnavigationlist li.sublist-item a:hover{
+    color: #6a7c94;
+    transition: 0.4s;
+}
+
+/* Photographs */
+
+img.img_content{
+    background-color: lightgray;
+    text-align: center;
+    padding: 10px;
+}
+
+figure.caption{
+    font-size: 12px;
+    text-align: center;
+    background-color: lightgray;
+}
+
+/* Benefits */
+
+section.imgs ul.lists li{
+    list-style: none;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Practices */
+div ul.practice_list{
+    background-color: lightgray;
+    list-style: none;
+    text-align: justify;
+}
+
+div.item3 p, li{
+    /* padding-left: 20px; */
+    padding-right: 30px;
+}
+
+div.item3 p.caption, div.item3 img.img_content{
+    text-align: center;
+    font-size: 15px;
+}
+
+img#microservices{
+    background-color: lightgray;
+    float: left;
+    padding: 10px;
+}
+
+/* Footer */
+div.sources{
+    display: flex;
+    background-color: lightgray;
+    margin-top: 30px;
+}
+
+.source_link{
+    text-decoration: none;
+    color:black;
+    background-color: lightgray;
+    width: 100%;
+    font-size: 20px;
+}
+
+.source_link:hover{
+    color: #6a7c94;
+    transition: 0.5s;
+}
+
+p.author{
+    background-color: lightgray;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}

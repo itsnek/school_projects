@@ -1,0 +1,92 @@
+<resources>
+
+    <string name="app_name">AirConditionerApp</string>
+
+    <!--    Menu    -->
+    <string name="action_settings">Ρυθμίσεις</string>
+    <string name="Dark_mode">Σκούρο θέμα</string>
+    <string name="English">Αγγλικά</string>
+    <string name="fontSize">Μέγεθος γραμματοσειράς</string>
+    <string name="HelpingMessages">Βοηθητικά μηνύματα</string>
+
+    <!--    Second Submenu      -->
+    <string name="defaultSize">Προδιαγεγραμμένο</string>
+    <string name="mediumSize">Μέτριο</string>
+    <string name="largeSize">Μεγάλο</string>
+
+    <!--    Labels     -->
+    <string name="main_fragment_label">Main Fragment</string>
+    <string name="Modes_fragment_label">Modes Fragment</string>
+    <string name="Cold_fragment_label">Cold Fragment</string>
+    <string name="Heat_fragment_label">Heat Fragment</string>
+    <string name="Humid_fragment_label">Humid Fragment</string>
+    <string name="Air_fragment_label">Air Fragment</string>
+    <string name="Intesity_fragment_label">Intesity Fragment</string>.
+    <string name="Timer_fragment_label">Timer Fragment</string>
+    <string name="Position_fragment_label">Position Fragment</string>
+    <string name="Timer_alt_fragment_label">Timer Fragment Alt</string>
+
+    <!--    Main page buttons   -->
+    <string name="modes">Καταστάσεις\nλειτουργίας</string>
+    <string name="default_settings">Επαναφορά σε <br></br>κανονική λειτουργία</string>
+    <string name="timer">Χρονοδιακόπτης</string>
+    <string name="fan_position">Θέση φτερών</string>
+
+    <string name="title_activity_modes">ModesActivity</string>
+    <string name="PowerOff">Off</string>
+    <string name="PowerOn">On</string>
+    <string name="Power_text">Εκκίνηση λειτουργίας</string>
+
+    <!--    Modes   -->
+    <string name="modes2">Καταστάσεις λειτουργίας</string>
+    <string name="coldmode">Λειτουργία ψύξης</string>
+    <string name="heatmode">Λειτουργία θέρμανσης</string>
+    <string name="humidmode">Λειτουργία αφύγρανσης</string>
+    <string name="airmode">Λειτουργία ανεμιστήρα</string>
+
+    <string name="coldmode2">Λειτουργία\nψύξης</string>
+    <string name="heatmode2">Λειτουργία\nθέρμανσης</string>
+    <string name="humidmode2">Λειτουργία\nαφύγρανσης</string>
+    <string name="airmode2">Λειτουργία\nανεμιστήρα</string>
+
+    <!--    Symbols    -->
+    <string name="celcius">°C</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="submit">Υποβολή</string>
+    <string name="intesity">Ένταση κλιματιστικού</string>
+
+    <!--    Position    -->
+    <string name="status_position">Θέση φτερών</string>
+    <string name="positions_multiple">Συνεχής\nκίνηση</string>
+    <string name="positions_middle">Αναμονή στις\nτρεις κύριες\nθέσεις</string>
+    <string name="position_settled">Επιλέχθηκε επιτυχώς η θέση των φτερών!</string>
+    <string name="positions_pop_up">Επιλέχθηκε η κατάσταση Θέση φτερών,επιλέξτε ποια επιλογή κίνησης των φτερών θέλετε.</string>
+    <string name="position_multiple">Επιλέχθηκε επιτυχώς η συνεχής κίνηση των φτερών!</string>
+    <string name="edge_positions">Αναμονή μόνο\nστις ακραίες\nθέσεις</string>
+
+    <!--    Timer     -->
+    <string name="timer_text">\nΣε πόση ώρα επιθυμείτε να σταματήσει το κλιματιστικό :\n</string>
+    <string name="Timer_pop_up">Επιλέχθηκε ο χρονοδιακόπτης,παρακαλώ επιλέξτε σε πόση ώρα θέλετε να σταματήσει το κλιματιστικό.</string>
+    <string name="Timer_done_pop_up">Η ώρα επιλέχθηκε επιτυχώς!Το κλιματιστικό θα σταματήσει σε</string>
+    <string name="time_from_now">Χρόνος από\nτώρα</string>
+    <string name="time_choice">Επιλογή\nσυγκεκριμένης ώρας</string>
+    <string name="timer_alt_text">\nΤι ώρα επιθυμείτε να σταματήσει το κλιματιστικό :\n</string>
+    <string name="Timer_pop_up_alt">Επιλέχθηκε ο χρονοδιακόπτης,παρακαλώ επιλέξτε την ακριβής ώρα που θέλετε να σταματήσει το κλιματιστικό.</string>
+    <string name="timer_alt_submit">Η ώρα επιλέχθηκε επιτυχώς!Το κλιματιστικό θα σταματήσει στις</string>
+    <string name="timer_alt_submit2">Η ώρα επιλέχθηκε επιτυχώς!Το κλιματιστικό θα σταματήσει στη</string>
+
+    <!--    Pop-up messages     -->
+    <string name="main_on_pop_up">Η συσκευή έχει τεθεί σε λειτουργία.</string>
+    <string name="main_off_pop_up">Η συσκευή έχει τεθεί εκτός λειτουργίας.</string>
+    <string name="modes_pop_up">Επιλέχθηκε η λειτουργία κλιματιστικού.<br></br>Παρακαλώ επιλέξτε τον τρόπο λειτουργίας.</string>
+    <string name="cold_pop_up">Επιλέχθηκε η λειτουργία ψύξης,παρακαλώ επιλέξτε την θερμοκρασία λειτουργίας του κλιματιστικού.</string>
+    <string name="heat_pop_up">Επιλέχθηκε η λειτουργία θέρμανσης,παρακαλώ επιλέξτε την θερμοκρασία λειτουργίας του κλιματιστικού.</string>
+    <string name="humid_pop_up">Επιλέχθηκε η λειτουργία αφύγρανσης,παρακαλώ επιλέξτε την θερμοκρασία λειτουργίας του κλιματιστικού.</string>
+    <string name="air_pop_up">Επιλέχθηκε η λειτουργία ανεμιστήρα,παρακαλώ επιλέξτε την θερμοκρασία λειτουργίας του κλιματιστικού.</string>
+    <string name="intensity_pop_up">Η θερμοκρασία επιλέχθηκε επιτυχώς!Παρακαλώ επιλέξτε την ένταση λειτουργίας του κλιματιστικού.</string>
+    <string name="last_pop_up">Η ένταση επιλέχθηκε επιτυχώς!Η λειτουργία που επιλέξατε έχει ξεκινήσει.</string>
+
+    <string name="default_pop_up">Η συσκευή έχει επανέλθει στην προδιαγεγραμένη λειτουργία.</string>
+
+</resources>
